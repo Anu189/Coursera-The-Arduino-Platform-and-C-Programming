@@ -1,9 +1,9 @@
-/* Fibonacci Series c language */ 
+
 #include<stdio.h>   
 
 int main() 
 { 
-    int n, first = 0, second = 1, next, c;   
+    int n, a = 0, b = 1, next, c;   
     n=6;   
     printf("First %d terms of Fibonacci series are :-\n",n);   
     for ( c = 0 ; c < n ; c++ ) 
@@ -11,9 +11,9 @@ int main()
         if ( c <= 1 ) next = c; 
         else 
         { 
-            next = first + second; 
-            first = second; 
-            second = next; 
+            next = a+ b; 
+            a = b; 
+            b= next; 
         } 
         printf("%d\n",next); 
     }   
